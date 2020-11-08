@@ -45,7 +45,7 @@
    E3D Mounting assumes Groovemount
    Creality Mounting assumes bolt-on kit
 */
-#define HotendStock
+//#define HotendStock
 //#define HotendE3D
 //#define HotendMosquito
 
@@ -1411,10 +1411,10 @@ Recv: #define DEFAULT_Kd 74.74
  */
 
 #define DEFAULT_MAX_FEEDRATE          { 750, 750, 20, 100 }
-#define DEFAULT_MAX_ACCELERATION      { 5000, 5000, 100, 10000 }
-#define DEFAULT_ACCELERATION          4500    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_MAX_ACCELERATION      { 7500, 7500, 750, 10000 }
+#define DEFAULT_ACCELERATION          6500    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  4500    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   4500    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_TRAVEL_ACCELERATION   6500    // X, Y, Z acceleration for travel (non printing) moves
 
 #if ENABLED(MachineCR20Pro)
   #define DEFAULT_MAX_FEEDRATE          { 750, 750, 10, 75 }
@@ -1518,7 +1518,7 @@ Recv: #define DEFAULT_Kd 74.74
  *   http://blog.kyneticcnc.com/2018/10/computing-junction-deviation-for-marlin.html
  */
 #if DISABLED(CLASSIC_JERK)
-  #define JUNCTION_DEVIATION_MM 0.033 // (mm) Distance from real junction edge
+  #define JUNCTION_DEVIATION_MM 0.048 // (mm) Distance from real junction edge
 #endif
 
 /**

@@ -1910,7 +1910,7 @@ Recv: #define DEFAULT_Kd 74.74
 
 // @section homing
 
-#define NO_MOTION_BEFORE_HOMING  // Inhibit movement until all axes have been homed
+//#define NO_MOTION_BEFORE_HOMING  // Inhibit movement until all axes have been homed
 
 //#define UNKNOWN_Z_NO_RAISE // Don't raise Z (lower the bed) if Z is "unknown." For beds that fall when Z is powered off.
 #if ANY(MachineEnder5)

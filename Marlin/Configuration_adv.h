@@ -1086,7 +1086,7 @@
   //#endif
   #define SD_FINISHED_STEPPERRELEASE true          // Disable steppers when SD Print is finished
   #define SD_FINISHED_RELEASECOMMAND "M84 X Y E" // You might want to keep the Z enabled so your bed stays in place.
-
+  #define BROWSE_MEDIA_ON_INSERT
   // Reverse SD sort to show "more recent" files first, according to the card's FAT.
   // Since the FAT gets out of order with usage, SDCARD_SORT_ALPHA is recommended.
   #if NONE(MachineCR10Orig, LowMemoryBoard)

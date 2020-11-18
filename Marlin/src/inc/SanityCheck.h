@@ -577,9 +577,9 @@
 #elif defined(SERIAL_PORT_2) && SERIAL_PORT_2 == SERIAL_PORT
   #error "SERIAL_PORT_2 cannot be the same as SERIAL_PORT."
 #elif defined(LCD_SERIAL_PORT) && LCD_SERIAL_PORT == SERIAL_PORT
-  #error "LCD_SERIAL_PORT cannot be the same as SERIAL_PORT."
+  #error "LCD_SERIAL_PORT cannot be the same as SERIAL_PORT." /*
 #elif defined(LCD_SERIAL_PORT) && LCD_SERIAL_PORT == SERIAL_PORT_2
-  #error "LCD_SERIAL_PORT cannot be the same as SERIAL_PORT_2."
+  #error "LCD_SERIAL_PORT cannot be the same as SERIAL_PORT_2."*/
 #endif
 #if !(defined(__AVR__) && defined(USBCON))
   #if ENABLED(SERIAL_XON_XOFF) && RX_BUFFER_SIZE < 1024

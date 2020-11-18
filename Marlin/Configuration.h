@@ -494,7 +494,6 @@
   #define SERIAL_PORT 0
 #endif
 
-//#define SERIAL_PORT_2 0
 
 /**
  * Select a secondary serial port on the board to use for communication with the host.
